@@ -12,7 +12,7 @@ export const RegisterPage = () =>{
   const navigate = useNavigate();
   const [isPosting, setIsPosting] = useState(false);
 
-  const {register, user} = useAuthStore()
+  const {register} = useAuthStore()
 
   const handleRegister = async(event: React.SubmitEvent<HTMLFormElement>) => {
 

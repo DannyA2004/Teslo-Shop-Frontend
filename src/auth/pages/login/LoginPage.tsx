@@ -14,7 +14,7 @@ export const LoginPage = () => {
   const navigate = useNavigate();
   const [isPosting, setIsPosting] = useState(false);
 
-  const {login,token,user} = useAuthStore()
+  const {login} = useAuthStore()
 
   const handleLogin = async(event: React.SubmitEvent<HTMLFormElement>) => {
 
