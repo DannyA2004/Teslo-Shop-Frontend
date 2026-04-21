@@ -3,9 +3,10 @@ import { Navigate, useNavigate, useParams } from 'react-router';
 
 import { useProduct } from '@/admin/hooks/useProduct';
 import { CustomFullScreenLoading } from '@/components/Custom/CustomFullScreenLoading';
-import { ProductForm } from './ui/productForm';
+
 import type { Product } from '@/interfaces/product.interface';
 import { toast } from 'sonner';
+import { ProductForm } from './ui/ProductForm';
 
 export const AdminProductPage = () => {
   const { id } = useParams();
