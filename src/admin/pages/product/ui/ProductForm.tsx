@@ -69,6 +69,7 @@ export const ProductForm = ({title, subtitle, product, isPending, onSubmit}: Pro
         sizeSet.add(size)
         setValue("sizes", Array.from(sizeSet))
     };
+    
     const removeSize = (sizeToRemove: Size) => {
         const sizeSet = new Set(getValues("sizes"));
         sizeSet.delete(sizeToRemove)
